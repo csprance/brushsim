@@ -28,21 +28,25 @@ View->Open View Pane-> Script Terminal
 
 In the terminal copy and paste
 
-general.run_file("simulatebrush.py")
+`general.run_file("simulatebrush.py")`
+
 Set Up Hotkeys For Super Speed!
 Tools->Configure Toolbox Macros
-Create a New Macro by Clicking the  and giving it a name simobject
+Create a New Macro by Clicking the !http://www.csprance.com/images/2015-02-06_04-11-39.png! and giving it a name simobject
 Copy The Below settings for Simulating the Object Make sure to click Assign!
+!http://www.csprance.com/images/2015-02-06_04-09-14.png!
+`general.run_file("simulatebrush.py")`
 
-general.run_file("simulatebrush.py")
-Create Another macro by clicking the  and giving it a different name setobj
+Create Another macro by clicking the  !http://www.csprance.com/images/2015-02-06_04-11-39.png! and giving it a different name setobj
 Copy the Below Settings for Setting the Objects Xforms and deleting the temporary RigidBodyEx named 'brush_sim_temp'
+!http://www.csprance.com/images/2015-02-06_04-11-04.png!
+`general.run_file("setobj.py")`
 
-general.run_file("setobj.py")
 Create Another macro and give it the name simobjweight
 Copy the below settings This will allow you to Set the objects mass instead of just accepting the default mass of 45
+!http://www.csprance.com/images/2015-02-06_05-00-31.png!
+`general.run_file_parameters("simulatebrush.py", 'weight')`
 
-general.run_file_parameters("simulatebrush.py", 'weight')
 Hit Ok.
 Now in the editor you can rapidly select a brush quickly simulate the physics and set the transforms all in just two key presses (I bound mine to Numpad 0 and Numpad 1 and Numpad 3 for setting the weight of the Physicalized object)
 
